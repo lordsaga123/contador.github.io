@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+	    <div class="container-encabezado">
+		    <div><a href="../index.html"><img src="../img/Vazquez.png" alt="Nombre-Completo-Empresa"></a>
+			</div>
+		    <nav>
+			    <ul class="menu">
+				    <li><a href="../index.html">Inicio</a></li>
+				    <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+				    <li><a href="./servicios.html">Servicios</a>
+			    	<li><a href="./proyectos.html">Proyectos de Inversión</a></li>
+			    	<li><a href="./contacto.html">Contacto</a></li>
+                </ul>	
+		    </nav>
+	    </div>
+	</header>
+    <main>
+        <section>
+            <div class="servicios-ofrecidos">
+                <h2>Contáctenos</h2>
+                <p>Envíenos su consulta y uno de nuestos asesores se comunicará a la brevedad</p>
+            </div>  
+            <form action="mailto:info@vazquez.com.uy" method="post" enctype="text/plain" class="formulario-contacto">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required class="cuadro">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="cuadro">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required class="cuadro">
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required class="cuadro">
+                        <option value="" selected disabled hidden>Seleccione una opción</option>
+                        <option value="apertura_empresa">Apertura de Empresa</option>
+                        <option value="contabilidad">Contabilidad</option>
+                        <option value="impuestos">Impuestos</option>
+                        <option value="sueldos">Sueldos</option>
+                        <option value="consultoria">Consultoría</option>
+                        <option value="consultoria">Proyecto de Inversión</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="5" required class="cuadro"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="Contacto-y-redes-sociales">
+			<div class="container">
+				<h3>Comuníquese con nosotros:</h3>
+				<ul>
+					<li><i class="bi bi-envelope-fill"></i><a href="https://www.gmail.com/"> info@vazquez.com.uy</a></li>
+					<li><i class="bi bi-telephone-forward"></i><a href="http://www.antel.com.uy/"> (+598) 2402 0000</a></li>
+					<li><i class="bi bi-whatsapp"></i><a href="http://www.whatsapp.com/"> (+598) 092 000 000</a></li>
+					<li><i class="bi bi-facebook"></i><a href="http://www.facebook.com/"> Facebook</a></li>
+					<li><i class="bi bi-instagram"></i><a href="http://www.instagram.com/"> Instagram</a></li>
+				</ul>
+			</div>
+		</section>
+    </main>
+	<footer>
+		<p>Derechos reservados © 2023 Vázquez: Servicios Contables</p>
+	</footer>
+</body>
+
+</html>
